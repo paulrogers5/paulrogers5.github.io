@@ -28,16 +28,16 @@ var init = function (window) {
     }
 
     // TODO 3 : Call the drawCircle() function
-    drawCircle();
-    drawCircle();
-    drawCircle();
-    drawCircle();
-    drawCircle();
+
     // TODO 7 : Use a loop to create multiple circles
 
     ///////////////////
     // PROGRAM LOGIC //
     ///////////////////
+
+    for (var i = 0; i < 25; i++) {
+      drawCircle()
+    }
 
     /* 
         This Function is called 60 times/second, producing 60 frames/second.
@@ -62,6 +62,10 @@ var init = function (window) {
       // TODO 8 / TODO 9 : Iterate over the array
     }
 
+    for (var i = 0; i < circles.length; i++) {
+  physikz.updatePosition
+}
+
     /* 
         This Function should check the position of a circle that is passed to the 
         Function. If that circle drifts off the screen, this Function should move
@@ -77,11 +81,11 @@ var init = function (window) {
       if (circle.x < 0){
         circle.x = canvas.width;
       }
-      if (circle.y > canvas.hieght) {
+      if (circle.y > 1000) {
         circle.y = 0;
       }
       if (circle.y < 0) {
-        circle.y = canvas.hieght;
+        circle.y = 1000;
       }
       // YOUR TODO 6 CODE ENDS HERE //////////////////////////
     };
